@@ -1,6 +1,5 @@
 #include<bits/stdc++.h> 
 using namespace std; 
-
 void fatorial(int n)
 {
     int i,j,temp,m,x;

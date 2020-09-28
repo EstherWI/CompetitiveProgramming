@@ -1,6 +1,5 @@
 #include<bits/stdc++.h> 
 using namespace std; 
-long long x, y, d, g;
 
 void fatorial(int n)
 {

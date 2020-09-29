@@ -1,29 +1,33 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
-int main(){
-    
-    long N, j, m;
-    bool ab;
-    cout << "PERFECTION OUTPUT" << endl;
-    while(scanf("%ld", &N) && N!=0){
-        ab = false;
-        m = N/2;
-        j=0;
-		for(long i=1;i<m;i++){
-			if(m%i==0){
-				j=j+i;
-			}
-            if (j > N) {
+int main() {
+	int n;
+	int sum;
+	bool ab;
+
+	printf("PERFECTION OUTPUT\n");
+	while (scanf("%d", &n), n) {
+		ab = false;
+		sum = 0;
+		for (int i = 1; i < n; i++) {
+			if (n % i == 0)
+				sum += i;
+			if (sum > n) {
 				ab = true;
 				break;
 			}
 		}
-        cout << N << " ";
-		if(ab) cout << "ABUNDANT" << endl;
-        else if(j==N) cout << "PERFECT" << endl;
-        else cout << "DEFICIENT" << endl;
-    }
-    cout << "END OF OUTPUT" << endl;
-    return 0;
+
+		printf("%5d  ", n);
+		if (ab)
+			printf("ABUNDANT\n");
+		else if (sum == n)
+			printf("PERFECT\n");
+		else
+			printf("DEFICIENT\n");
+	}
+	printf("END OF OUTPUT\n");
+
+	return 0;
 }

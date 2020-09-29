@@ -11,7 +11,6 @@ int main(){
             cont[k]=0;
 
         for(int i=1;i<=N;i++){
-            printf("Teste\n");
             x=i;
             while(x!=0){
                 cont[x%10]++;

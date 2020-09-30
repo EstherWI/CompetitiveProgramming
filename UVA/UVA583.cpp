@@ -51,7 +51,7 @@ int main()
 				x=factorize(n, primes);
 				printf("%lld = ", n);
 			}
-			if(x==n) printf("%lld ", n);
+			if(x==n) printf("%lld", n);
 			else
 			for(long long i=0; i < primes.size(); i++){
 				std::cout << primes.at(i);

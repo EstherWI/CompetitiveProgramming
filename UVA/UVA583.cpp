@@ -1,3 +1,4 @@
+//Prime Factors
 #include <bits/stdc++.h> 
 using namespace std; 
 // function to calculate all the prime factors and 

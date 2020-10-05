@@ -1,6 +1,6 @@
 #include <bits/stdc++.h> 
 using namespace std; 
-
+//primes is populate by sieve
 long long numDiv(long long N) {
   long long PF_idx = 0, PF = primes[PF_idx], ans = 1; // start from ans = 1
   while (PF * PF <= N) {

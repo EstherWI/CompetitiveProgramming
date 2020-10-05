@@ -45,5 +45,5 @@ int main()
        }
        printf("Between %lld and %lld, %lld has a maximum of %lld divisors.\n", l, u, num, maior);
     }
-	  return 0; 
+    return 0; 
 } 

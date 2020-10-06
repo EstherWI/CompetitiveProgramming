@@ -4,7 +4,7 @@ using namespace std;
 int main() 
 { 
 	int t, n, j, cont;
-  cin >> t;
+	cin >> t;
 	while(t--) {
         cin >> n;
         int a[2*n], b[n];

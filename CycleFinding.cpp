@@ -1,4 +1,4 @@
-//The tortoise and Hare Algorithm
+//The Tortoise and Hare Algorithm
 std::pair<int, int> floydCycleFinding(int x0) { // function int f(int x) is defined earlier
     // 1st part: finding k*mu, hare’s speed is 2x tortoise’s
     int tortoise = f(x0), hare = f(f(x0)); // f(x0) is the node next to x0

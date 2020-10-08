@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {   
-    unsigned long long n, k, fat1, fat2;
+    unsigned long long n, k;
     while (cin >> n >> k)
     {
         long double sum = 0;

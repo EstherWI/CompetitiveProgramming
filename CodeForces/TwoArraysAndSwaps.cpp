@@ -2,7 +2,7 @@
 using namespace std;
  
 int main(){    
-    int n, k, t, mina=40, maxb=-1, inda, indb, suma;
+    int n, k, t, suma;
     cin >> t;
     while(t--){
         cin >> n >> k;
@@ -14,27 +14,16 @@ int main(){
         for(int i=0;i<n;i++){
             cin >> b[i];
         }
-        while(k--){
-            mina=40, maxb=-1;
-            for(int i=0;i<n;i++){
-                if(a[i]<mina){
-                    inda=i;
-                    mina=a[i];
-                }
-            }  
-            for(int i=0;i<n;i++){
-                if(b[i]>maxb){
-                    indb=i;
-                    maxb=b[i];
-                }
-            }
-            if(mina<maxb){
-                int h = a[inda];
-                a[inda]=b[indb];
-                b[indb]=h;
+        sort(a, a+n);
+        sort(b, b+n, greater<int>());
+
+        for(int i=0;i<n && k>0;i++){
+            if(a[i]<b[i]){
+                swap(a[i],b[i]);
+                k--;
             }
             else break;
-        }
+        }  
         for(int i=0;i<n;i++){
             suma+=a[i];
         }

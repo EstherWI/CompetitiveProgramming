@@ -1,4 +1,4 @@
-//Very Easy !!!
+#Very Easy !!!
 while(1):
 	try:
 		n, a = map(int, input().split())
